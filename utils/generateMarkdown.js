@@ -12,16 +12,16 @@ function renderLicenseSection(license) {}
 
 //Order items need to be listed: 
 //title
-//description, table of contents, installation, usage, license
-//contribuing, tests, and github link for questions
+//description, table of contents, installation, usage, license, contribuing, tests, and github link for questions
+
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # ${name}
+  # ${data.name}
 
   ## Description
-  - ${description}
+  - ${data.description}
 
   ## Table of Contents!
 
@@ -46,7 +46,7 @@ function generateMarkdown(data) {
 
 
   ## Questions
-  ### If you have any questions feel free to reach out! My GitHub is ${question}
+  ### If you have any questions feel free to reach out! My GitHub is ${data.question}
 
 
 
