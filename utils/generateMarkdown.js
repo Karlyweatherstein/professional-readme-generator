@@ -35,23 +35,21 @@ function generateMarkdown(data) {
   ## Installation
   - In order to run this application, the following dependencies must be installed: ${data.license}
 
-
-
   ## Usage
-
+  - ${data.usage}
 
   ## License
-
-
+  - This project is covered under a ${data.license} license.
+  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
 
   ## Contributing
-
+ - The following contributed to this application: ${data.contributing}
 
   ## Tests
-
+ - Tests are included in this application: ${data.tests} 
 
   ## Questions
-  ### If you have any questions feel free to reach out! My GitHub is ${data.question}
+  - If you have any questions feel free to reach out! My GitHub is ${data.link} and my direct email is ${data.question}
 
 
 
