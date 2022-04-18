@@ -60,10 +60,10 @@ const questions = [
         }
     },
     {
-        type: 'checkbox',
+        type: 'checkbox',   
         name: 'license',
         message: 'What kind of license is needed for this project? ',
-        choices: []
+        choices: ['BSD', 'MIT', 'GPL']
     },
     {
         type: 'input',
@@ -110,7 +110,13 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    
+    fs.writeFile(fileName, data, function(err) {
+        if (err) {
+            return;
+        } else {
+            console.log("success")
+        }
+    })
     
 }
 
