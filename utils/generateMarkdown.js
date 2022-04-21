@@ -1,6 +1,24 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+
+function renderLicenseBadge(license) {
+var licenseBadge = ""
+
+
+  if (license === "Apache") {
+    licenseBadge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+  } else if (license === "BSD") {
+    licenseBadge = "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+  } else if(license === "MIT") {
+    licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+  } else if(license === "GPL") {
+    licenseBadge = "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)"
+  } else if(license === "N/A") {
+    licenseBadge = ''
+  }
+}
+
+renderLicenseBadge()
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -9,6 +27,8 @@ function renderLicenseLink(license) {}
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
+
+
 
 //Order items need to be listed: 
 //title
@@ -20,8 +40,11 @@ function generateMarkdown(data) {
   return `
   # ${data.name}
 
+  ## ${data.licenseBadge}
+
   ## Description
   - ${data.description}
+
 
   ## Table of Contents!
   - [Installation](#installation)
@@ -40,7 +63,6 @@ function generateMarkdown(data) {
 
   ## License
   - This project is covered under a ${data.license} license.
-  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
 
   ## Contributing
  - The following contributed to this application: ${data.contributing}

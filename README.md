@@ -1,8 +1,11 @@
 
-  # readme
+  # reade me
+
+  ## undefined
 
   ## Description
-  - create professional readme
+  - create
+
 
   ## Table of Contents!
   - [Installation](#installation)
@@ -14,21 +17,20 @@
 
 
   ## Installation
-  - In order to run this application, the following dependencies must be installed: BSD
+  - In order to run this application, the following dependencies must be installed: MIT
 
   ## Usage
-  - to quickly create a readme 
+  - idk
 
   ## License
-  - This project is covered under a BSD license.
-  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+  - This project is covered under a MIT license.
 
   ## Contributing
- - The following contributed to this application: N/A
+ - The following contributed to this application: n/a
 
   ## Tests
- - Tests are included in this application: true 
+ - Tests are included in this application: false 
 
   ## Questions
-  - If you have any questions feel free to reach out! My GitHub is https://github.com/https://github.com/Karlyweatherstein/professional-readme-generator/readme and my direct email is karlyweatherstein
+  - If you have any questions feel free to reach out! My GitHub is karly and my direct email is weath
 
