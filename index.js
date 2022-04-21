@@ -42,14 +42,12 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'How do you install your project? (Optional)',
-        default: ''
+        message: 'How do you install your project?',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'How would someone use your project? (Optional)',
-        default: ''
+        message: 'How would someone use your project?',
 
     },
     {
@@ -61,8 +59,8 @@ const questions = [
     {
         type: 'input',
         name: 'contributing',
-        message: 'Who else contributed to this project? (Optional)',
-        default: ''
+        message: 'Who else contributed to this project?',
+        
     },
     {
         type: 'confirm',

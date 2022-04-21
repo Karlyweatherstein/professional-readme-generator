@@ -51,11 +51,6 @@ function generateMarkdown(data) {
   ## Questions
   - If you have any questions feel free to reach out! My GitHub is ${data.link} and my direct email is ${data.question}
 
-
-
-
-  https://github.com/${data.Username}/${data.Title}
-
 `;
 }
 
