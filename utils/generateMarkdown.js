@@ -2,26 +2,22 @@
 // If there is no license, return an empty string
 
 function renderLicenseBadge(license) {
-var licenseBadge = ""
-
 
   if (license === "Apache") {
-    licenseBadge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
   } else if (license === "BSD") {
-    licenseBadge = "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+    return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
   } else if(license === "MIT") {
-    licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
   } else if(license === "GPL") {
-    licenseBadge = "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)"
+    return "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)"
   } else if(license === "N/A") {
-    licenseBadge = ''
+    return ''
   }
 }
 
-renderLicenseBadge()
 
 // TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
@@ -30,17 +26,16 @@ function renderLicenseSection(license) {}
 
 
 
-//Order items need to be listed: 
+//Order items need to be  listed: 
 //title
 //description, table of contents, installation, usage, license, contribuing, tests, and github link for questions
 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `
+ var licenseBadge = '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
+  return ` ${licenseBadge}
   # ${data.name}
-
-  ## ${data.licenseBadge}
 
   ## Description
   - ${data.description}
@@ -56,7 +51,7 @@ function generateMarkdown(data) {
 
 
   ## Installation
-  - In order to run this application, the following dependencies must be installed: ${data.license}
+  - In order to run this application, the following dependencies must be installed: ${data.installation}
 
   ## Usage
   - ${data.usage}
