@@ -53,4 +53,4 @@
 
 - If you have any questions feel free to reach out! My GitHub is https://github.com/Karlyweatherstein and my direct email is karlyweatherstein@gmail.com
 
-- The link to my walkthrough video is:
+- The link to my walkthrough video is: https://drive.google.com/file/d/1jgK2r7-hAxo4iZetqZOQfF7-FDww08eY/view?usp=sharing
